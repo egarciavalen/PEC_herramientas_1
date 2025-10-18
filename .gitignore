@@ -1,0 +1,8 @@
+# Caché de parcel
+.parcel-cache/
+
+# node_modules
+node_modules/
+
+# dist
+dist
