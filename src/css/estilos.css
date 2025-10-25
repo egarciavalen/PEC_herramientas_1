@@ -39,11 +39,12 @@
      --img-reduced-height-rem: 40rem;
      --nested-list-title-size: 2rem;
      --nested-list-margin-bottom: 1rem;
-     --inside-nested-list-size: 1.5rem;
+     --inside-nested-list-size: 1.8rem;
      --inside-nested-list-margin-left-size: 1.5rem;
      --inside-nested-list-margin-top-size: 0.5rem;
+     
      /* OTROS ELEMENTOS */
-     --content-width: 80%;
+     --content-width: 60%;
  }
 
  *,
@@ -113,7 +114,6 @@
  /* CONTENEDORES PRINCIPALES */
 
  .imgContent {
-    position: relative;
      /* Imagen de fondo */
      background-image: url('/src/img/fondo.jpg');
      /* Para poder redimensionar sin que la imagen pierda calidad */
@@ -124,8 +124,8 @@
  }
 
  .alignContent {
-    /* Especifica el ancho permitido del contenido para que se vea la foto por los lados */
-    width: var(--content-width);
+     /* Especifica el ancho permitido del contenido para que se vea la foto por los lados */
+     width: var(--content-width);
      /* Se aplican border laterales para mejorar la presentación */
      border-left: var(--border-content-size) solid var(--border-img-color);
      border-right: var(--border-content-size) solid var(--border-img-color);
@@ -203,42 +203,50 @@
 
  }
 
- /* LISTA DE ENLACES */ 
+ /* LISTA DE ENLACES */
 
- .nestedList, .nestedList li ul {
-   list-style-type: none; 
+ .alignList {
+    display: flex;
+    justify-content: center;
+ }
+
+ .nestedList,
+ .nestedList li ul {
+     list-style-type: none;
  }
 
  .nestedListTitle {
-    /* Tamaño de los textos */
-    font-size: var(--nested-list-title-size);
-    /* Margen inferior para diferenciar categorías */
-    margin-bottom: var(--nested-list-margin-bottom);
-    /* Colores */
-    color: var(--tertiary-color);
-    background-color: inherit;
-    /* Para enfatizar el título */
-    font-style: italic;
+     /* Tamaño de los textos */
+     font-size: var(--nested-list-title-size);
+     /* Margen inferior para diferenciar categorías */
+     margin-bottom: var(--nested-list-margin-bottom);
+     /* Colores */
+     color: var(--tertiary-color);
+     background-color: inherit;
+     /* Para enfatizar el título */
+     font-style: italic;
  }
 
  .insideNestedList li {
-    /* Los elementos tienen un tamaño inferior */
-    font-size: var(--inside-nested-list-size);
-    /* Se rquita el estilo itálico */
-    font-style: initial;
-    /* Colores */
-    color: var(--text-color);
-    background-color: inherit;
-    /* Margen para diferenciar las listas anidadas */
-    margin-left: var(--inside-nested-list-margin-left-size);
-    /* Margen para diferenciar entre los elementos */
-    margin-top: var(--inside-nested-list-margin-top-size);
+     /* Los elementos tienen un tamaño inferior */
+     font-size: var(--inside-nested-list-size);
+     /* Se rquita el estilo itálico */
+     font-style: initial;
+     /* Colores */
+     color: var(--text-color);
+     background-color: inherit;
+     /* Margen para diferenciar las listas anidadas */
+     margin-left: var(--inside-nested-list-margin-left-size);
+     /* Margen para diferenciar entre los elementos */
+     margin-top: var(--inside-nested-list-margin-top-size);
 
  }
 
  /* CONTENIDO CENTRAL */
 
  main {
+     /* El contenedor ocupa todo el ancho del padre*/
+     width: 100%;
      /* Borde negro superior con el header*/
      border-top: var(--border-content-size) solid var(--border-img-color);
      /* Colores a indicar */
@@ -284,11 +292,11 @@
  }
 
  iframe {
-    /* Para ajustar el tamaño del vídeo */
-    width: 100%;
-    /* Permite que el alto se mantenga coherente */
-    height: auto;
-}
+     /* Para ajustar el tamaño del vídeo */
+     width: 100%;
+     /* Permite que el alto se mantenga coherente */
+     height: auto;
+ }
 
  /* PIE DE PÁGINA */
 
@@ -301,18 +309,18 @@
      padding-top: var(--footer-padding);
      padding-bottom: var(--footer-padding);
  }
- 
 
-/* OTROS ELEMENTOS */
 
-.underlined {
-    /* Para el menú de navegación al acceder a la página correspondiente*/
-    text-decoration: underline;
-}
+ /* OTROS ELEMENTOS */
 
-.reduced {
-    /* Para reducir la altura de algunas imágenes */
-    height: var(--img-reduced-height-rem);
-    /* Asegura que no se pierda la proporción */
-    width: auto;
-}
+ .underlined {
+     /* Para el menú de navegación al acceder a la página correspondiente*/
+     text-decoration: underline;
+ }
+
+ .reduced {
+     /* Para reducir la altura de algunas imágenes */
+     height: var(--img-reduced-height-rem);
+     /* Asegura que no se pierda la proporción */
+     width: auto;
+ }
