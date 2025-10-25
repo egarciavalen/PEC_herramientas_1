@@ -13,6 +13,7 @@
      /* TAMAÑOS */
      --initial-px: 10px;
      --figure-margin-top-size: 4rem;
+     --h1-margin-top: 1rem;
      --h1-size: 5rem;
      --h2-size: 3rem;
      --h2-margin-size: 0.5rem;
@@ -43,7 +44,7 @@
      --inside-nested-list-margin-left-size: 1.5rem;
      --inside-nested-list-margin-top-size: 0.5rem;
      --video-introduction-margin-size: 2rem;
-     
+
      /* OTROS ELEMENTOS */
      --content-width: 60%;
  }
@@ -68,6 +69,7 @@
  }
 
  h1 {
+     margin-top: var(--h1-margin-top);
      font-size: var(--h1-size);
  }
 
@@ -207,8 +209,8 @@
  /* LISTA DE ENLACES */
 
  .alignList {
-    display: flex;
-    justify-content: center;
+     display: flex;
+     justify-content: center;
  }
 
  .nestedList,
@@ -240,8 +242,12 @@
      margin-left: var(--inside-nested-list-margin-left-size);
      /* Margen para diferenciar entre los elementos */
      margin-top: var(--inside-nested-list-margin-top-size);
-
  }
+
+ .insideNestedList li::before{
+    /* Uso de un carácter unicode para dar mayor estilo */
+	content: "\0279B";
+}
 
  /* CONTENIDO CENTRAL */
 
@@ -331,11 +337,11 @@
  }
 
  .videoIntroduction {
-    /* Margen superior del párrafo que presenta el vídeo */
-    margin-top: var(--video-introduction-margin-size);
+     /* Margen superior del párrafo que presenta el vídeo */
+     margin-top: var(--video-introduction-margin-size);
  }
 
  .videoIntroduction + figure {
-    /* Margen superior del vídeo con el texto que lo presenta */
-    margin-top: var(--video-introduction-margin-size);
+     /* Margen superior del vídeo con el texto que lo presenta */
+     margin-top: var(--video-introduction-margin-size);
  }
