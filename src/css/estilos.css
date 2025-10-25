@@ -12,7 +12,7 @@
 
      /* TAMAÑOS */
      --initial-px: 10px;
-     --margin-content-size: 4rem;
+     --figure-margin-top-size: 4rem;
      --h1-size: 5rem;
      --h2-size: 3rem;
      --h2-margin-size: 0.5rem;
@@ -37,6 +37,11 @@
      --dd-figure-p-size: 1.8rem;
      --dd-figure-p-margin: 1rem;
      --img-reduced-height-rem: 40rem;
+     --nested-list-title-size: 2rem;
+     --nested-list-margin-bottom: 1rem;
+     --inside-nested-list-size: 1.5rem;
+     --inside-nested-list-margin-left-size: 1.5rem;
+     --inside-nested-list-margin-top-size: 0.5rem;
      /* OTROS ELEMENTOS */
      --content-width: 80%;
  }
@@ -198,6 +203,39 @@
 
  }
 
+ /* LISTA DE ENLACES */ 
+
+ .nestedList, .nestedList li ul {
+   list-style-type: none; 
+ }
+
+ .nestedListTitle {
+    /* Tamaño de los textos */
+    font-size: var(--nested-list-title-size);
+    /* Margen inferior para diferenciar categorías */
+    margin-bottom: var(--nested-list-margin-bottom);
+    /* Colores */
+    color: var(--tertiary-color);
+    background-color: inherit;
+    /* Para enfatizar el título */
+    font-style: italic;
+ }
+
+ .insideNestedList li {
+    /* Los elementos tienen un tamaño inferior */
+    font-size: var(--inside-nested-list-size);
+    /* Se rquita el estilo itálico */
+    font-style: initial;
+    /* Colores */
+    color: var(--text-color);
+    background-color: inherit;
+    /* Margen para diferenciar las listas anidadas */
+    margin-left: var(--inside-nested-list-margin-left-size);
+    /* Margen para diferenciar entre los elementos */
+    margin-top: var(--inside-nested-list-margin-top-size);
+
+ }
+
  /* CONTENIDO CENTRAL */
 
  main {
@@ -227,7 +265,7 @@
      justify-content: center;
      align-items: center;
      /* Margen con el texto superior */
-     margin-top: var(--margin-content-size);
+     margin-top: var(--figure-margin-top-size);
      /* Se colocan los elementos uno debajo de otro*/
      flex-direction: column;
  }
@@ -244,6 +282,13 @@
      border-radius: var(--border-radius-size);
      border: var(--border-img-size) solid var(--border-img-color);
  }
+
+ iframe {
+    /* Para ajustar el tamaño del vídeo */
+    width: 100%;
+    /* Permite que el alto se mantenga coherente */
+    height: auto;
+}
 
  /* PIE DE PÁGINA */
 
