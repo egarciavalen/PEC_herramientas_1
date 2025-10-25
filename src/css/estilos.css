@@ -49,6 +49,8 @@
      /* Color del texto y de fondo por defecto */
      background-color: var(--main-color);
      color: var(--secondary-color);
+    /* Para cortar el contenido cuando empiece a desbordarse */
+     overflow: hidden;
  }
 
  h1 {
@@ -105,8 +107,6 @@
  }
 
  .alignContent {
-     /* Ancho del contenido */
-     width: var(--content-width);
      /* Se aplican border laterales para mejorar la presentación */
      border-left: var(--border-content-size) solid var(--border-img-color);
      border-right: var(--border-content-size) solid var(--border-img-color);
