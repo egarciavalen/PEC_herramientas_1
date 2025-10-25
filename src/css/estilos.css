@@ -13,10 +13,12 @@
      /* TAMAÑOS */
      --initial-px: 10px;
      --margin-content-size: 4rem;
-     --h1-size: 4rem;
-     --h2-size: 2.5rem;
-     --h3-size: 2rem;
-     --p-size: 1.8rem;
+     --h1-size: 5rem;
+     --h2-size: 3rem;
+     --h2-margin-size: 0.5rem;
+     --h3-size: 2.5rem;
+     --p-size: 2rem;
+     --p-margin-size: 0.5rem;
      --nav-li-size: 2rem;
      --cite-size: 1.5rem;
      --border-radius-size: 0.5rem;
@@ -29,9 +31,14 @@
      --article-header-margin: 2rem;
      --img-cite-margin: 1rem;
      --footer-padding: 2rem;
-
+     --dt-size: 2.2rem;
+     --dt-margin-top: 2rem;
+     --dt-margin-bottom: 0.5rem;
+     --dd-figure-p-size: 1.8rem;
+     --dd-figure-p-margin: 1rem;
+     --img-reduced-height-rem: 40rem;
      /* OTROS ELEMENTOS */
-     --content-width: 70%;
+     --content-width: 80%;
  }
 
  *,
@@ -49,8 +56,8 @@
      /* Color del texto y de fondo por defecto */
      background-color: var(--main-color);
      color: var(--secondary-color);
-    /* Para cortar el contenido cuando empiece a desbordarse */
-     overflow: hidden;
+     /* Para cortar el contenido cuando empiece a desbordarse */
+     overflow-x: hidden;
  }
 
  h1 {
@@ -59,6 +66,8 @@
 
  h2 {
      font-size: var(--h2-size);
+     margin-top: var(--h2-margin-size);
+     margin-bottom: var(--h2-margin-size);
  }
 
  h3 {
@@ -74,6 +83,8 @@
 
  p {
      font-size: var(--p-size);
+     margin-top: var(--p-margin-size);
+     margin-top: var(--p-margin-size);
  }
 
  cite {
@@ -97,16 +108,19 @@
  /* CONTENEDORES PRINCIPALES */
 
  .imgContent {
+    position: relative;
      /* Imagen de fondo */
      background-image: url('/src/img/fondo.jpg');
-     /* Para poder redimensionar */
-     background-size: cover;
+     /* Para poder redimensionar sin que la imagen pierda calidad */
+     background-size: contain;
      /* Se aplica un display flex para poder centrar el contenido */
      display: flex;
      justify-content: center;
  }
 
  .alignContent {
+    /* Especifica el ancho permitido del contenido para que se vea la foto por los lados */
+    width: var(--content-width);
      /* Se aplican border laterales para mejorar la presentación */
      border-left: var(--border-content-size) solid var(--border-img-color);
      border-right: var(--border-content-size) solid var(--border-img-color);
@@ -143,11 +157,45 @@
      padding-right: var(--nav-li-margin-padding-size);
  }
 
+ header h1 a,
  nav ul li a {
      /* Color de los enlaces en la navegación*/
      color: var(--secondary-color);
      /* Para que el validador CSS no produzca errores*/
      background-color: inherit;
+ }
+
+ /* LISTA DESCRIPTIVA */
+
+ main h2 {
+     /* Se alinea el texto superior */
+     text-align: center;
+ }
+
+ dt {
+     /* Tamaño del título de los ítems */
+     font-size: var(--dt-size);
+     /* Color del título */
+     color: var(--tertiary-color);
+     background-color: inherit;
+     /* Para enfatizar el texto */
+     font-weight: bold;
+     /* Margenes de los títulos */
+     margin-top: var(--dt-margin-top);
+     margin-bottom: var(--dt-margin-bottom);
+ }
+
+ dd figure p {
+     font-size: var(--dd-figure-p-size);
+     /* Para aportar un estilo cursivo */
+     font-style: italic;
+     margin-top: 0;
+     /* Se indica algo de espacio con la imagen */
+     margin-bottom: var(--dd-figure-p-margin);
+     /* Gestión del color */
+     color: var(--tertiary-color);
+     background-color: inherit;
+
  }
 
  /* CONTENIDO CENTRAL */
@@ -205,5 +253,21 @@
      /* Alinear texto */
      text-align: center;
      /* Margen interno */
-     padding: var(--footer-padding);
+     padding-top: var(--footer-padding);
+     padding-bottom: var(--footer-padding);
  }
+ 
+
+/* OTROS ELEMENTOS */
+
+.underlined {
+    /* Para el menú de navegación al acceder a la página correspondiente*/
+    text-decoration: underline;
+}
+
+.reduced {
+    /* Para reducir la altura de algunas imágenes */
+    height: var(--img-reduced-height-rem);
+    /* Asegura que no se pierda la proporción */
+    width: auto;
+}
