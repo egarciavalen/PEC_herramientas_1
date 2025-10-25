@@ -1,0 +1,142 @@
+ :root {
+     /* Se indican las variables que se van a emplear */
+
+     /* COLORES */
+     --text-color: #000000;
+     --main-color: #F4E0BD;
+     --secondary-color: #2E1405;
+     --tertiary-color: #612D0F;
+     --border-img-color: #000000;
+
+     /* TAMAÑOS */
+     --initial-px: 10px;
+     --margin-content-size: 4rem;
+     --h1-size: 4rem;
+     --h2-size: 2.5rem;
+     --h3-size: 2rem;
+     --p-size: 1.8rem;
+     --cite-size: 1.5rem: 
+     --border-radius-size: 0.5rem;
+     --img-size: 40rem;
+     --border-img-size: 0.5rem;
+ }
+
+ *,
+ *:after,
+ *:before {
+     /* Para garantizar que el diseño de los elementos sean consistentes */
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     /* Tamaño base para que sea más facil redimensionar con unidades rem */
+     font-size: var(--initial-px);
+ }
+
+ body {
+     background-color: var(--secondary-color);
+ }
+
+ h1 {
+     font-size: var(--h1-size);
+ }
+
+ h2 {
+     font-size: var(--h2-size);
+ }
+
+ h3 {
+     font-size: var(--h3-size);
+ }
+
+ p {
+     font-size: var(--p-size);
+ }
+
+ cite {
+     font-size: var(--cite-size);
+ }
+
+ .alignContent {
+     /* Para centrar los elementos se usa un display flex */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* Se trabaja con columnas de contenido*/
+     flex-direction: column;
+ }
+
+ main {
+     /* Colores a indicar */
+     color: var(--text-color);
+     background-color: var(--main-color);
+     /* Para establecer los bordes redondeados */
+     border-top-left-radius: var(--border-radius-size);
+     border-top-right-radius: var(--border-radius-size);
+     /* Márgenes internos del contenido*/
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     padding-left: 6rem;
+     padding-right: 6rem;
+ }
+
+ .headerContent {
+     /* Colores a indicar */
+     color: var(--background-info-color);
+     background-color: var(--tertiary-color);
+ }
+
+
+ article header {
+     /* Para centrar los titulares */
+     text-align: center;
+     /* Margen de fondo */
+     margin-bottom: 2rem;
+ }
+
+ a {
+     /* Color de los enlaces */
+     color: var(--tertiary-color);
+     /* Se quita la línea por defecto */
+     text-decoration: none;
+ }
+
+ a:hover {
+     /* Se incluye la línea cuando se mueve el ratón por encima */
+     text-decoration: underline;
+ }
+
+
+ figure {
+     /* Uso de un display flex para linear en el centro la imagen y su cita */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* Margen con el texto superior */
+     margin-top: var(--margin-content-size);
+     /* Se colocan los elementos uno debajo de otro*/
+     flex-direction: column;
+ }
+
+ img {
+     /* Para establecer imágenes responsivas */
+     max-width: 100%;
+     height: auto;
+     /* Se establece un ancho */
+     width: var(--img-size);
+     /* Margen con la cita inferior */
+     margin-bottom: 1rem;
+     /* Para definir un borde negro en las imágenes */
+     border-radius: var(--border-radius-size);
+     border: var(--border-img-size) solid var(--border-img-color);
+ }
+
+ footer {
+     background-color: var(--tertiary-color);
+     color: var(--main-color);
+     text-align: center;
+     padding: 2rem;
+     margin-bottom: 0%;
+ }
