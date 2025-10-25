@@ -1,11 +1,13 @@
+ /* CONTENIDO GLOBAL */
+
  :root {
      /* Se indican las variables que se van a emplear */
 
      /* COLORES */
      --text-color: #000000;
-     --main-color: #F4E0BD;
-     --secondary-color: #612D0F;
-     --tertiary-color: #2E1405;
+     --main-color: #2E1405;
+     --secondary-color: #F4E0BD;
+     --tertiary-color: #613000;
      --border-img-color: #000000;
 
      /* TAMAÑOS */
@@ -15,10 +17,21 @@
      --h2-size: 2.5rem;
      --h3-size: 2rem;
      --p-size: 1.8rem;
+     --nav-li-size: 2rem;
      --cite-size: 1.5rem;
      --border-radius-size: 0.5rem;
      --img-size: 40rem;
      --border-img-size: 0.5rem;
+     --border-content-size: 0.4rem;
+     --nav-li-margin-padding-size: 1rem;
+     --main-padding-horizontal-size: 6rem;
+     --main-padding-vertical-size: 2rem;
+     --article-header-margin: 2rem;
+     --img-cite-margin: 1rem;
+     --footer-padding: 2rem;
+
+     /* OTROS ELEMENTOS */
+     --content-width: 70%;
  }
 
  *,
@@ -33,6 +46,9 @@
  html {
      /* Tamaño base para que sea más facil redimensionar con unidades rem */
      font-size: var(--initial-px);
+     /* Color del texto y de fondo por defecto */
+     background-color: var(--main-color);
+     color: var(--secondary-color);
  }
 
  h1 {
@@ -41,12 +57,17 @@
 
  h2 {
      font-size: var(--h2-size);
-     color: #613000;
  }
 
  h3 {
      font-size: var(--h3-size);
-          color: #613000;
+ }
+
+ h2,
+ h3 {
+     color: var(--tertiary-color);
+     /* Para que el validador CSS no produzca errores*/
+     background-color: inherit;
  }
 
  p {
@@ -57,74 +78,11 @@
      font-size: var(--cite-size);
  }
 
- .imgContent {
-    background-image: url('/src/img/prueba.jpg');
-    background-size: cover;
-    display: flex;
-         justify-content: center;
- }
-
- .alignContent {
-    width: 70%;
-    border-left: 0.2rem solid black;
-        border-right: 0.2rem solid black;
-     /* Para centrar los elementos se usa un display flex */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     /* Se trabaja con columnas de contenido*/
-     flex-direction: column;
-     /* Para crear "columnas" laterales por un mayor estilo visual */
-     background-color: var(--tertiary-color);
- }
-
- main {
-        border-top: 0.2rem solid black;
-     /* Colores a indicar */
-     color: var(--text-color);
-     background-color: var(--main-color);
-     /* Márgenes internos del contenido*/
-     padding-top: 2rem;
-     padding-bottom: 2rem;
-     padding-left: 6rem;
-     padding-right: 6rem;
- }
-
- .headerContent {
-     /* Colores a indicar */
-     color: var(--main-color);
-     max-width: 100%;
- }
-
-
- nav ul {
-     display: flex;
-     justify-content: space-between;
-     list-style-type: none;
- }
-
- nav ul li {
-     margin-top: 1rem;
-     margin-bottom: 1rem;
-     font-size: 2rem;
-     padding-left: 1rem;
-     padding-right: 1rem;
- }
-
- nav ul li a {
-     color: var(--main-color);
- }
-
- article header {
-     /* Para centrar los titulares */
-     text-align: center;
-     /* Margen de fondo */
-     margin-bottom: 2rem;
- }
-
  a {
      /* Color de los enlaces */
-     color: var(--secondary-color);
+     color: var(--tertiary-color);
+     /* Para que el validador CSS no produzca errores*/
+     background-color: inherit;
      /* Se quita la línea por defecto */
      text-decoration: none;
  }
@@ -132,6 +90,86 @@
  a:hover {
      /* Se incluye la línea cuando se mueve el ratón por encima */
      text-decoration: underline;
+ }
+
+ /* CONTENEDORES PRINCIPALES */
+
+ .imgContent {
+     /* Imagen de fondo */
+     background-image: url('/src/img/fondo.jpg');
+     /* Para poder redimensionar */
+     background-size: cover;
+     /* Se aplica un display flex para poder centrar el contenido */
+     display: flex;
+     justify-content: center;
+ }
+
+ .alignContent {
+     /* Ancho del contenido */
+     width: var(--content-width);
+     /* Se aplican border laterales para mejorar la presentación */
+     border-left: var(--border-content-size) solid var(--border-img-color);
+     border-right: var(--border-content-size) solid var(--border-img-color);
+     /* Para centrar los elementos se usa un display flex y se alinean los contenido */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* Se trabaja con columnas de contenido*/
+     flex-direction: column;
+     /* Color principal de la web */
+     background-color: var(--main-color);
+     /* Para que el validador CSS no produzca errores*/
+     color: inherit;
+ }
+
+ /* NAVEGACIÓN */
+
+ nav ul {
+     /* Se hace un flex para poder colocar los items en una línea*/
+     display: flex;
+     /* Para dejar espacio entre los elementos */
+     justify-content: space-between;
+     /* Se quita los puntos de la lista */
+     list-style-type: none;
+ }
+
+ nav ul li {
+     /* Fuente de letra */
+     font-size: var(--nav-li-size);
+     /* Márgenes externos/internos */
+     margin-top: var(--nav-li-margin-padding-size);
+     margin-bottom: var(--nav-li-margin-padding-size);
+     padding-left: var(--nav-li-margin-padding-size);
+     padding-right: var(--nav-li-margin-padding-size);
+ }
+
+ nav ul li a {
+     /* Color de los enlaces en la navegación*/
+     color: var(--secondary-color);
+     /* Para que el validador CSS no produzca errores*/
+     background-color: inherit;
+ }
+
+ /* CONTENIDO CENTRAL */
+
+ main {
+     /* Borde negro superior con el header*/
+     border-top: var(--border-content-size) solid var(--border-img-color);
+     /* Colores a indicar */
+     color: var(--text-color);
+     background-color: var(--secondary-color);
+     /* Márgenes internos del contenido*/
+     padding-top: var(--main-padding-vertical-size);
+     padding-bottom: var(--main-padding-vertical-size);
+     padding-left: var(--main-padding-horizontal-size);
+     padding-right: var(--main-padding-horizontal-size);
+ }
+
+ article header {
+     /* Para centrar los titulares */
+     text-align: center;
+     /* Margen de fondo */
+     margin-bottom: var(--article-header-margin);
  }
 
 
@@ -153,17 +191,19 @@
      /* Se establece un ancho */
      width: var(--img-size);
      /* Margen con la cita inferior */
-     margin-bottom: 1rem;
+     margin-bottom: var(--img-cite-margin);
      /* Para definir un borde negro en las imágenes */
      border-radius: var(--border-radius-size);
      border: var(--border-img-size) solid var(--border-img-color);
  }
 
+ /* PIE DE PÁGINA */
+
  footer {
-    border-top: 0.2rem solid black;
-     background-color: var(--tertiary-color);
-     color: var(--main-color);
+     /* Para crear un borde negro con el resto de bloques */
+     border-top: var(--border-content-size) solid var(--border-img-color);
+     /* Alinear texto */
      text-align: center;
-     padding: 2rem;
-     margin-bottom: 0%;
+     /* Margen interno */
+     padding: var(--footer-padding);
  }
