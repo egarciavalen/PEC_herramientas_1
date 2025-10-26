@@ -66,6 +66,8 @@
      color: var(--secondary-color);
      /* Para cortar el contenido cuando empiece a desbordarse */
      overflow-x: hidden;
+     /* Fuente de letra a emplear en la web; si NO se carga se usa sans-serif */
+     font-family: "Delius Swash Caps", sans-serif;
  }
 
  h1 {
@@ -245,10 +247,10 @@
      margin-top: var(--inside-nested-list-margin-top-size);
  }
 
- .insideNestedList li::before{
-    /* Uso de un carácter unicode para dar mayor estilo */
-	content: "\0279B";
-}
+ .insideNestedList li::before {
+     /* Uso de un carácter unicode para dar mayor estilo */
+     content: "\0279B";
+ }
 
  /* CONTENIDO CENTRAL */
 
@@ -342,7 +344,7 @@
      margin-top: var(--video-introduction-margin-size);
  }
 
- .videoIntroduction + figure {
+ .videoIntroduction+figure {
      /* Margen superior del vídeo con el texto que lo presenta */
      margin-top: var(--video-introduction-margin-size);
  }
