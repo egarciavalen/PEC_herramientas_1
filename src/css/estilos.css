@@ -21,7 +21,7 @@
     --content-width: 90%;
 
     /* Elementos centrales */
-    --h1-margin-top: 1rem;
+    --h1-margin-top-size: 1rem;
     --h1-size: 5rem;
     --h2-size: 2.5rem;
     --h2-margin-size: 0.5rem;
@@ -41,14 +41,13 @@
 
     /* Gestión de la lista de viajes */
     --dt-size: 1.8rem;
-    --dt-margin-top: 2rem;
-    --dt-margin-bottom: 0.5rem;
-    --dd-figure-p-size: 1.5rem;
-    --dd-figure-p-margin: 1rem;
+    --dt-margin-top-size: 2rem;
+    --dt-margin-bottom-size: 0.5rem;
+    --dd-figure-p-margin-size: 1rem;
 
     /* Gestión de la lista de enlaces */
     --nested-list-title-size: 2rem;
-    --nested-list-margin-bottom: 3rem;
+    --nested-list-margin-bottom-size: 3rem;
     --inside-nested-list-size: 1.8rem;
     --inside-nested-list-margin-left-size: 1.5rem;
     --inside-nested-list-margin-top-size: 1rem;
@@ -56,8 +55,8 @@
     /* Gestión de las figuras (imágens y vídeos) */
     --figure-margin-top-size: 4rem;
     --img-size: 40rem;
-    --img-cite-margin: 1rem;
-    --img-reduced-height-rem: 40rem;
+    --img-cite-margin-size: 1rem;
+    --img-reduced-height-rem-size: 40rem;
     --video-introduction-margin-size: 2rem;
     --cite-size: 1.5rem;
 
@@ -71,7 +70,7 @@
     --footer-padding-horizontal-size: 1rem;
 
     /* Otros elementos */
-    --article-header-margin: 2rem;
+    --article-header-margin-size: 2rem;
 }
 
 *,
@@ -96,7 +95,7 @@ html {
 }
 
 h1 {
-    margin-top: var(--h1-margin-top);
+    margin-top: var(--h1-margin-top-size);
     font-size: var(--h1-size);
 }
 
@@ -230,8 +229,8 @@ dt {
     /* Para enfatizar el texto */
     font-weight: bold;
     /* Margenes de los títulos */
-    margin-top: var(--dt-margin-top);
-    margin-bottom: var(--dt-margin-bottom);
+    margin-top: var(--dt-margin-top-size);
+    margin-bottom: var(--dt-margin-bottom-size);
 }
 
 dd figure p {
@@ -240,7 +239,7 @@ dd figure p {
     font-style: italic;
     margin-top: 0;
     /* Se indica algo de espacio con la imagen */
-    margin-bottom: var(--dd-figure-p-margin);
+    margin-bottom: var(--dd-figure-p-margin-size);
     /* Gestión del color */
     color: var(--tertiary-color);
     background-color: inherit;
@@ -263,7 +262,7 @@ dd figure p {
     /* Tamaño de los textos */
     font-size: var(--nested-list-title-size);
     /* Margen inferior para diferenciar categorías */
-    margin-bottom: var(--nested-list-margin-bottom);
+    margin-bottom: var(--nested-list-margin-bottom-size);
     /* Colores */
     color: var(--tertiary-color);
     background-color: inherit;
@@ -311,7 +310,7 @@ article header {
     /* Para centrar los titulares */
     text-align: center;
     /* Margen de fondo */
-    margin-bottom: var(--article-header-margin);
+    margin-bottom: var(--article-header-margin-size);
 }
 
 
@@ -333,7 +332,7 @@ img {
     /* Se establece un ancho */
     width: var(--img-size);
     /* Margen con la cita inferior */
-    margin-bottom: var(--img-cite-margin);
+    margin-bottom: var(--img-cite-margin-size);
     /* Para definir un borde negro en las imágenes */
     border-radius: var(--border-radius-size);
     border: var(--border-img-size) solid var(--border-img-color);
@@ -370,7 +369,7 @@ footer {
 
 .reduced {
     /* Para reducir la altura de algunas imágenes */
-    height: var(--img-reduced-height-rem);
+    height: var(--img-reduced-height-rem-size);
     /* Asegura que no se pierda la proporción */
     width: auto;
 }
