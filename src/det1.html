@@ -3,15 +3,15 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- POSTHTML -->
+  <include src="./src/components/metadata.html"></include>
 
   <meta name="author" content="Efrén García Valencia">
   <meta name="description"
     content="Página web con el detalle del primer artículo para el desarrollo de las PEC de la asignatura de Herramientas HTML y CSS 1">
 
-  <link rel="shortcut icon" href="img/favicon.png">
-  <link rel="stylesheet" href="css/estilos.css">
+  <!-- POSTHTML -->
+  <include src="./src/components/links.html"></include>
 
   <title>Detalle | cocoaHub</title>
 </head>
@@ -125,12 +125,9 @@
     </div>
 
   </div>
-  <footer>
-    <p>Efrén García Valencia</p>
-    <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr>, 2025</p>
-    <p>Trabajo realizado para la asignatura de Herramientas <abbr title="HyperText Markup Language">HTML</abbr> y <abbr
-        title="Cascading Style Sheets">CSS</abbr> I</p>
-  </footer>
+
+  <!-- POSTHTML -->
+  <include src="./src/components/footer.html"></include>
 
 </body>
 
