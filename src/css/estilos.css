@@ -76,8 +76,8 @@
     --button-history-padding-size: 1rem;
 
     /* Gestión de los botones en las pestañas de detalle */
-    --showButton-detail-margin-top-size: 2rem;
-    --showButton--detail-margin-bottom-size: 1rem;
+    --show-button-detail-margin-top-size: 2rem;
+    --show-button-detail-margin-bottom-size: 1rem;
 
     /* Otros elementos */
     --article-header-margin-size: 2rem;
@@ -423,8 +423,8 @@ footer {
 
 .showImagesButton, .showVideoButton {
     /* Margenes superior e inferior de los botones */
-    margin-top: var(--showButton-detail-margin-top-size);
-    margin-bottom: var(--showButton-detail-margin-top-size);
+    margin-top: var(--show-button-detail-margin-top-size);
+    margin-bottom: var(--show-button-detail-margin-bottom-size);
     /* Borde de los botones */
     border-radius: var(--border-radius-size);
     /* Margen interno para que se visualice mejor */
