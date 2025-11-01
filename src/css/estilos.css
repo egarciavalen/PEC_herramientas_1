@@ -75,6 +75,10 @@
     --p-history-padding-size: 1rem;
     --button-history-padding-size: 1rem;
 
+    /* Gestión del botón en la pestaña de inicio */
+    --info-button-detail-margin-top-size: 3rem;
+    --info-button-detail-margin-bottom-size: 2rem;
+
     /* Gestión de los botones en las pestañas de detalle */
     --show-button-detail-margin-top-size: 2rem;
     --show-button-detail-margin-bottom-size: 1rem;
@@ -380,7 +384,7 @@ footer {
     /* Ocupa todo el ancho del contenedor */
     display: block;
     /* Se deja espacio por arriba y por debajob y se centra */
-    margin: 3rem auto 2rem auto;
+    margin: var(--info-button-detail-margin-top-size) auto var(--info-button-detail-margin-top-size) auto;
     /* Se especifica un radio para que se note que es un botón */
     border-radius: var(--border-radius-size);
     /* Por comodidad visual se pone un margen interno */
