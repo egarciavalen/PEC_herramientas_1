@@ -75,6 +75,10 @@
     --p-history-padding-size: 1rem;
     --button-history-padding-size: 1rem;
 
+    /* Gestión de los botones en las pestañas de detalle */
+    --showButton-detail-margin-top-size: 2rem;
+    --showButton--detail-margin-bottom-size: 1rem;
+
     /* Otros elementos */
     --article-header-margin-size: 2rem;
 }
@@ -375,7 +379,7 @@ footer {
 #infoButton {
     /* Ocupa todo el ancho del contenedor */
     display: block;
-    /* Se deja espacio por arriba y por debajo */
+    /* Se deja espacio por arriba y por debajob y se centra */
     margin: 3rem auto 2rem auto;
     /* Se especifica un radio para que se note que es un botón */
     border-radius: var(--border-radius-size);
@@ -408,6 +412,36 @@ footer {
 
 }
 
+/* MOSTRAR Y OCULTAR VÍDEO E IMÁGENES */
+
+.infoDet {
+    /* Se aplica un display flex para colocar los botones en columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showImagesButton, .showVideoButton {
+    /* Margenes superior e inferior de los botones */
+    margin-top: var(--showButton-detail-margin-top-size);
+    margin-bottom: var(--showButton-detail-margin-top-size);
+    /* Borde de los botones */
+    border-radius: var(--border-radius-size);
+    /* Margen interno para que se visualice mejor */
+    padding: var(--button-history-padding-size);
+    /* Tamaño de letra */
+    font-size: var(--p-size);
+    /* Colores */
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.showImagesButton:hover, .showVideoButton:hover {
+    /* Cambio del color al pulsar el ratón por encima */
+    background-color: var(--secondary-color);
+    color: var(--main-color);   
+}
+
 /* OCULTAR Y MOSTRAR ELEMENTOS */
 .hidden {
     visibility: hidden;
@@ -434,6 +468,11 @@ footer {
 .videoIntroduction+figure {
     /* Margen superior del vídeo con el texto que lo presenta */
     margin-top: var(--video-introduction-margin-size);
+}
+
+.none {
+    /* Para cuando se quiera borrar elementos del DOM */
+    display: none;
 }
 
 /* MEDIA QUERIES */
