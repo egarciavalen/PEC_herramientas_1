@@ -1,10 +1,10 @@
 /* Elementos del DOM */
-const indexButton = document.getElementById('infoButton');
-const historyParagraph = document.getElementById('historyParagraph');
+const indexButton = document.getElementById('infoButton') as HTMLButtonElement;
+const historyParagraph = document.getElementById('historyParagraph') as HTMLButtonElement;
 
 /* Funciones */
 function showInfo() {
-    const historyClassName = historyParagraph.className;
+    const historyClassName= historyParagraph.className;
     if (historyClassName.includes('visible')) {
         historyParagraph.className = 'hidden';
         indexButton.className = 'buttonNotSelected';
