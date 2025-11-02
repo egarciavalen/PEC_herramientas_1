@@ -1,7 +1,7 @@
 {
   "name": "pec_1",
   "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": "> 0.5%, last 2 versions, dead",
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
