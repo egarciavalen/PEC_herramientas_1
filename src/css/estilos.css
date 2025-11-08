@@ -13,7 +13,7 @@ html {
     /* Para cortar el contenido cuando empiece a desbordarse */
     overflow-x: hidden;
     /* Fuente de letra a emplear en la web; si NO se carga se usa sans-serif */
-    font-family: "Delius Swash Caps", sans-serif;
+    font-family: 'Delius Swash Caps', 'sans-serif';
 }
 
 h1 {
