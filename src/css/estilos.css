@@ -42,7 +42,6 @@ h3 {
 p {
     font-size: var(--p-size);
     margin-top: var(--p-margin-size);
-    margin-top: var(--p-margin-size);
 }
 
 cite {
