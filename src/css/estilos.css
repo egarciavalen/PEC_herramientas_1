@@ -12,8 +12,8 @@ html {
     color: var(--secondary-color);
     /* Para cortar el contenido cuando empiece a desbordarse */
     overflow-x: hidden;
-    /* Fuente de letra a emplear en la web; si NO se carga se usa sans-serif */
-    font-family: 'Delius Swash Caps', 'sans-serif';
+    /* Fuente de letra a emplear en la web; si NO se carga se usa serif */
+    font-family: 'Delius Swash Caps', serif;
 }
 
 h1 {
@@ -147,6 +147,7 @@ dt {
     font-size: var(--dt-size);
     /* Color del título */
     color: var(--tertiary-color);
+    /* Para que el validador CSS no produzca errores*/
     background-color: inherit;
     /* Para enfatizar el texto */
     font-weight: bold;
@@ -164,6 +165,7 @@ dd figure p {
     margin-bottom: var(--dd-figure-p-margin-size);
     /* Gestión del color */
     color: var(--tertiary-color);
+    /* Para que el validador CSS no produzca errores*/
     background-color: inherit;
 
 }
@@ -187,6 +189,7 @@ dd figure p {
     margin-bottom: var(--nested-list-margin-bottom-size);
     /* Colores */
     color: var(--tertiary-color);
+    /* Para que el validador CSS no produzca errores*/
     background-color: inherit;
     /* Para enfatizar el título */
     font-style: italic;
@@ -199,6 +202,7 @@ dd figure p {
     font-style: initial;
     /* Colores */
     color: var(--text-color);
+    /* Para que el validador CSS no produzca errores*/
     background-color: inherit;
     /* Margen para diferenciar las listas anidadas */
     margin-left: var(--inside-nested-list-margin-left-size);
