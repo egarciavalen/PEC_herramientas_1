@@ -79,6 +79,14 @@
     --show-button-detail-margin-top-size: 2rem;
     --show-button-detail-margin-bottom-size: 1rem;
 
+    /* Miga de pan */
+    --breadcrumb-font-size: 1.5rem;
+    --breadcrumb-margin-size: 2rem;
+    --breadcrumb-li-margin-size: 0.5rem;
+    --breadcrumb-content-padding-size: 1rem;
+
     /* Otros elementos */
     --article-header-margin-size: 2rem;
+
+
 }

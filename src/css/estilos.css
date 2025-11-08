@@ -333,7 +333,8 @@ footer {
     align-items: center;
 }
 
-.showImagesButton, .showVideoButton {
+.showImagesButton,
+.showVideoButton {
     /* Margenes superior e inferior de los botones */
     margin-top: var(--show-button-detail-margin-top-size);
     margin-bottom: var(--show-button-detail-margin-bottom-size);
@@ -348,10 +349,11 @@ footer {
     color: var(--secondary-color);
 }
 
-.showImagesButton:hover, .showVideoButton:hover {
+.showImagesButton:hover,
+.showVideoButton:hover {
     /* Cambio del color al pulsar el ratón por encima */
     background-color: var(--secondary-color);
-    color: var(--main-color);   
+    color: var(--main-color);
 }
 
 /* OCULTAR Y MOSTRAR ELEMENTOS */
@@ -361,6 +363,26 @@ footer {
 
 .visible {
     visibility: visible;
+}
+
+/* MIGA DE PAN */
+
+.breadCrumb {
+    margin-top: var(--breadcrumb-margin-size);
+    margin-bottom: var(--breadcrumb-margin-size);
+    margin-left: var(--breadcrumb-margin-size);
+    font-size: var(--breadcrumb-font-size);
+}
+
+.breadCrumbList li {
+    display: inline-block;
+    margin-right: var(--breadcrumb-li-margin-size);
+}
+
+.breadCrumbNext::after {
+    /* Se especifica el carácter unicode */
+    content: '\1433';
+    padding-left: var(--breadcrumb-content-padding-size);
 }
 
 /* OTROS ELEMENTOS */
