@@ -7,8 +7,7 @@
   <include src="./src/components/metadata.html"></include>
 
   <meta name="author" content="Efrén García Valencia">
-  <meta name="description"
-    content="Página web con las diferentes categorías a las que puede acceder un usuario">
+  <meta name="description" content="Página web con las diferentes categorías a las que puede acceder un usuario">
 
   <!-- POSTHTML -->
   <include src="./src/components/links.html"></include>
@@ -48,17 +47,25 @@
               Pues bien, qué mejor sitio para disfrutar de lo auténtico que el Museo Lindt del chocolate.</p>
             <figure>
               <p>¡Pulsa en la imagen para aprender más!</p>
-              <a href="det1.html"><img class="reduced" src="img/museo-chocolate-lindt.jpg"
-                  alt="Atracción turística del Museo Lindt"></a>
-              <figcaption>
-                <cite>
-                  Foto de <a
-                    href="https://unsplash.com/es/@zapiatkina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kseniia
-                    Zapiatkina</a>
-                  en <a
-                    href="https://unsplash.com/es/fotos/una-escultura-de-una-fuente-de-chocolate-frente-a-un-edificio-po3YPx4e8eU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                </cite>
-              </figcaption>
+              <a href="det1.html">
+
+                <!-- Resolution switching (sizes) -->
+                <img srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-640.jpg 640w, 
+                          img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg 1920w 
+                          img/museo-chocolate-lindt/museo-chocolate-lindt-2400.jpg 2400w" sizes="(width <= 640px) 640px,
+                            (width <= 1920px) 1920px,
+                            2400px" src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" ,
+                  alt="Atracción turística del Museo Lindt" />
+
+                <figcaption>
+                  <cite>
+                    Foto de <a
+                      href="https://unsplash.com/es/@zapiatkina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kseniia
+                      Zapiatkina</a>
+                    en <a
+                      href="https://unsplash.com/es/fotos/una-escultura-de-una-fuente-de-chocolate-frente-a-un-edificio-po3YPx4e8eU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  </cite>
+                </figcaption>
             </figure>
           </dd>
 
@@ -70,8 +77,15 @@
               busques más!</p>
             <figure>
               <p>¡Pulsa en la imagen para aprender más!</p>
-              <a href="det2.html"><img src="img/ritter-sport.jpg"
-                  alt="Una pila de chocolates de múltiples colores de Ritter Sport"></a>
+              <a href="det2.html">
+
+                <!-- Resolution switching (dpi) -->
+                <img srcset="img/ritter-sport/ritter-sport-640.jpg, 
+                img/ritter-sport/ritter-sport-1280.jpg 1.5x, 
+                img/ritter-sport/ritter-sport-1920.jpg 2x" src="img/ritter-sport/ritter-sport-1280.jpg"
+                  alt="Una pila de chocolates de múltiples colores de Ritter Sport" />
+
+              </a>
               <figcaption>
                 <cite>
                   Foto de <a
@@ -90,7 +104,15 @@
               Aquí aprenderás todo lo que necesitas para ser un auténtico experto en el proceso de fabricación.</p>
             <figure>
               <p>¡Pulsa en la imagen para aprender más!</p>
-              <img src="img/museo-valor.jpg" alt="Lista de chocolates Valor">
+
+                <!-- Resolution switching (sizes) -->
+                <img srcset="img/museo-valor/museo-valor-640.jpg 640w, 
+                          img/museo-valor/museo-valor-1920.jpg 1920w 
+                          img/museo-valor/museo-valor-2400.jpg 2400w" sizes="(width <= 640px) 640px,
+                            (width <= 1920px) 1920px,
+                            2400px" src="img/museo-valor/museo-valor-1920.jpg" ,
+                  alt="Lista de chocolates Valor" />
+
               <figcaption>
                 <cite>
                   Foto de

@@ -46,7 +46,14 @@
             <h3>Una auténtica delicia de una de las mejores marcas del mundo</h3>
 
             <figure>
-              <img class="reduced" src="img/museo-chocolate-lindt.jpg" alt="Atracción turística del Museo Lindt">
+
+              <!-- Art direction -->
+              <picture>
+                <source media="(width < 950px)" srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-reduced.jpg" />
+                <source media="(width >= 950px)" srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" />
+                <img src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" alt="Atracción turística del Museo Lindt" />
+              </picture>
+              
               <figcaption>
                 <cite>
                   Foto de <a
@@ -79,7 +86,15 @@
 
             <div class="imagesDet none">
               <figure>
-                <img src="img/det1/chocolates-lindt-1.jpg" alt="Chocolates Lindt en una bolsa">
+
+                <!-- Resolution switching (sizes) -->
+                <img srcset="img/det1/chocolates-lindt-1/chocolates-lindt-1-640.jpg 640w, 
+                          img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg 1920w 
+                          img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg 2400w" sizes="(width <= 640px) 640px,
+                            (width <= 1920px) 1920px,
+                            2400px" src="img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg" ,
+                  alt="Chocolates Lindt en una bolsa" />
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -92,8 +107,15 @@
               </figure>
 
               <figure>
-                <img src="img/det1/chocolates-lindt-2.jpg"
-                  alt="Chocolates Lindt donde se aprecia la marca en un bombón rojo">
+
+                <!-- Resolution switching (sizes) -->
+                <img srcset="img/det1/chocolates-lindt-2/chocolates-lindt-2-640.jpg 640w, 
+                          img/det1/chocolates-lindt-2/chocolates-lindt-2-2920.jpg 1920w 
+                          img/det1/chocolates-lindt-2/chocolates-lindt-2-2920.jpg 2400w" sizes="(width <= 640px) 640px,
+                            (width <= 1920px) 1920px,
+                            2400px" src="img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg" ,
+                  alt="Chocolates Lindt donde se aprecia la marca en un bombón rojo" />
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -106,7 +128,15 @@
               </figure>
 
               <figure>
-                <img class="reduced" src="img/det1/entrada-museo-lindt.jpg" alt="Entrada al museo de chocolate Lindt">
+
+                <!-- Resolution switching (sizes) -->
+                <img srcset="img/det1/entrada-museo-lindt/entrada-museo-lindt-640.jpg 640w, 
+                          img/det1/entrada-museo-lindt/entrada-museo-lindt-2920.jpg 1920w 
+                          img/det1/entrada-museo-lindt/entrada-museo-lindt-2920.jpg 2400w" sizes="(width <= 640px) 640px,
+                            (width <= 1920px) 1920px,
+                            2400px" src="img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg" ,
+                  alt="Entrada al museo de chocolate Lindt" />
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -134,7 +164,8 @@
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>
                   <cite>
-                    <i lang="en">Lindt Home of Chocolate</i> l La GRAN APERTURA con Roger Federer por Lindt Chocolate World
+                    <i lang="en">Lindt Home of Chocolate</i> l La GRAN APERTURA con Roger Federer por Lindt Chocolate
+                    World
                   </cite>
                 </figcaption>
               </figure>

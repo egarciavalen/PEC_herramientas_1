@@ -46,7 +46,14 @@
             <h2><i lang="de">Ritter Sport Bunte Schokowelt</i> - Berlin (Alemania)</h2>
             <h3>Casi 1.000 m<sup>2</sup> de diversión y alegría</h3>
             <figure>
-              <img src="img/ritter-sport.jpg" alt="Una pila de chocolates de múltiples colores de Ritter Sport">
+
+              <!-- Art direction -->
+              <picture>
+                <source media="(width < 950px)" srcset="img/ritter-sport/ritter-sport-reduced.jpg" />
+                <source media="(width >= 950px)" srcset="img/ritter-sport/ritter-sport-1280.jpg" />
+                <img src="img/ritter-sport/ritter-sport-1280.jpg" alt="Una pila de chocolates de múltiples colores de Ritter Sport" />
+              </picture>
+              
               <figcaption>
                 <cite>
                   Foto de <a
@@ -75,7 +82,14 @@
 
             <div class="imagesDet none">
               <figure>
-                <img src="img/det2/chocolates-ritter-1.jpg" alt="Chocolates Ritter formando una espiral">
+
+                <!-- Resolution switching (dpi) -->
+                <img srcset="img/det2/chocolates-ritter-1/chocolates-ritter-1-640.jpg, 
+                img/det2/chocolates-ritter-1/chocolates-ritter-1-1280.jpg 1.5x, 
+                img/det2/chocolates-ritter-1/chocolates-ritter-1-1920.jpg 2x"
+                  src="img/det2/chocolates-ritter-1/chocolates-ritter-1-1280.jpg"
+                  alt="Chocolates Ritter formando una espiral" />
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -85,8 +99,18 @@
                   </cite>
                 </figcaption>
               </figure>
+
               <figure>
+
+                <!-- Resolution switching (dpi) -->
+                <img srcset="img/det2/chocolates-ritter-2/chocolates-ritter-2-640.jpg, 
+                img/det2/chocolates-ritter-2/chocolates-ritter-2-1280.jpg 1.5x, 
+                img/det2/chocolates-ritter-2/chocolates-ritter-2-1920.jpg 2x"
+                  src="img/det2/chocolates-ritter-2/chocolates-ritter-2-1280.jpg"
+                  alt="Chocolate Ritter singular de color azul" />
+
                 <img src="img/det2/chocolates-ritter-2.jpg" alt="Chocolate Ritter singular de color azul">
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -98,8 +122,14 @@
               </figure>
 
               <figure>
-                <img class="reduced" src="img/det2/chocolates-ritter-3.jpg"
-                  alt="Chocolate Ritter formando una escalera">
+
+                <!-- Resolution switching (dpi) -->
+                <img srcset="img/det2/chocolates-ritter-3/chocolates-ritter-3-640.jpg, 
+                img/det2/chocolates-ritter-3/chocolates-ritter-3-1280.jpg 1.5x, 
+                img/det2/chocolates-ritter-3/chocolates-ritter-3-1920.jpg 2x"
+                  src="img/det2/chocolates-ritter-3/chocolates-ritter-3-1280.jpg"
+                  alt="Chocolate Ritter formando una escalera" />
+
                 <figcaption>
                   <cite>
                     Foto de <a
@@ -122,7 +152,8 @@
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>
                   <cite>
-                    <i lang="de">Ritter Sport Bunte Schokowelt Berlin</i> | <i lang="en">The Ultimate Chocolate Paradise</i> por Ayca Lymos
+                    <i lang="de">Ritter Sport Bunte Schokowelt Berlin</i> | <i lang="en">The Ultimate Chocolate
+                      Paradise</i> por Ayca Lymos
                   </cite>
                 </figcaption>
               </figure>
