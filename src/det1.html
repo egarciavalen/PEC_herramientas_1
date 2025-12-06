@@ -49,11 +49,14 @@
 
               <!-- Art direction -->
               <picture>
-                <source media="(width < 950px)" srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-reduced.jpg" />
-                <source media="(width >= 950px)" srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" />
-                <img src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" alt="Atracción turística del Museo Lindt" />
+                <source media="(max-width: 950px)"
+                  srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-reduced.jpg?as=webp" />
+                <source media="(min-width: 951px)"
+                  srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg?as=webp" />
+                <img src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg"
+                  alt="Atracción turística del Museo Lindt" />
               </picture>
-              
+
               <figcaption>
                 <cite>
                   Foto de <a
@@ -88,11 +91,9 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/det1/chocolates-lindt-1/chocolates-lindt-1-640.jpg 640w, 
-                          img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg 1920w 
-                          img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg 2400w" sizes="(width <= 640px) 640px,
-                            (width <= 1920px) 1920px,
-                            2400px" src="img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg" ,
+                <img srcset="img/det1/chocolates-lindt-1/chocolates-lindt-1-640.jpg?as=webp 640w, 
+                          img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg?as=webp 1920w"
+                  sizes="(max-width: 800px) 640px, 1920px" src="img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg"
                   alt="Chocolates Lindt en una bolsa" />
 
                 <figcaption>
@@ -109,11 +110,9 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/det1/chocolates-lindt-2/chocolates-lindt-2-640.jpg 640w, 
-                          img/det1/chocolates-lindt-2/chocolates-lindt-2-2920.jpg 1920w 
-                          img/det1/chocolates-lindt-2/chocolates-lindt-2-2920.jpg 2400w" sizes="(width <= 640px) 640px,
-                            (width <= 1920px) 1920px,
-                            2400px" src="img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg" ,
+                <img srcset="img/det1/chocolates-lindt-2/chocolates-lindt-2-640.jpg?as=webp 640w, 
+                          img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg?as=webp 1920w"
+                  sizes="(max-width: 800px) 640px, 1920px" src="img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg"
                   alt="Chocolates Lindt donde se aprecia la marca en un bombón rojo" />
 
                 <figcaption>
@@ -130,11 +129,10 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/det1/entrada-museo-lindt/entrada-museo-lindt-640.jpg 640w, 
-                          img/det1/entrada-museo-lindt/entrada-museo-lindt-2920.jpg 1920w 
-                          img/det1/entrada-museo-lindt/entrada-museo-lindt-2920.jpg 2400w" sizes="(width <= 640px) 640px,
-                            (width <= 1920px) 1920px,
-                            2400px" src="img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg" ,
+                <img class="reduced" srcset="img/det1/entrada-museo-lindt/entrada-museo-lindt-640.jpg?as=webp 640w, 
+                          img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg?as=webp 1920w"
+                  sizes="(max-width: 800px) 640px, 1920px"
+                  src="img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg"
                   alt="Entrada al museo de chocolate Lindt" />
 
                 <figcaption>

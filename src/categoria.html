@@ -48,13 +48,12 @@
             <figure>
               <p>¡Pulsa en la imagen para aprender más!</p>
               <a href="det1.html">
-                
+
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-640.jpg 640w, 
-                          img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg 1920w 
-                          img/museo-chocolate-lindt/museo-chocolate-lindt-2400.jpg 2400w" sizes="(width <= 640px) 640px,
-                            (width <= 1920px) 1920px,
-                            2400px" src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg" ,
+                <img srcset="img/museo-chocolate-lindt/museo-chocolate-lindt-640.jpg?as=webp 640w, 
+                          img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg?as=webp 1920w"
+                  sizes="(max-width: 800px) 640px, 1920px"
+                  src="img/museo-chocolate-lindt/museo-chocolate-lindt-1920.jpg"
                   alt="Atracción turística del Museo Lindt" />
 
               </a>
@@ -81,9 +80,9 @@
               <a href="det2.html">
 
                 <!-- Resolution switching (dpi) -->
-                <img srcset="img/ritter-sport/ritter-sport-640.jpg, 
-                img/ritter-sport/ritter-sport-1280.jpg 1.5x, 
-                img/ritter-sport/ritter-sport-1920.jpg 2x" src="img/ritter-sport/ritter-sport-1280.jpg"
+                <img srcset="img/ritter-sport/ritter-sport-640.jpg?as=webp, 
+                img/ritter-sport/ritter-sport-1280.jpg?as=webp 2x, 
+                img/ritter-sport/ritter-sport-1920.jpg?as=webp 3x" src="img/ritter-sport/ritter-sport-1280.jpg"
                   alt="Una pila de chocolates de múltiples colores de Ritter Sport" />
 
               </a>
@@ -107,11 +106,9 @@
               <p>¡Pulsa en la imagen para aprender más!</p>
 
               <!-- Resolution switching (sizes) -->
-              <img class="reduced" srcset="img/museo-valor/museo-valor-640.jpg 640w, 
-                          img/museo-valor/museo-valor-1920.jpg 1920w 
-                          img/museo-valor/museo-valor-2400.jpg 2400w" sizes="(width <= 640px) 640px,
-                            (width <= 1920px) 1920px,
-                            2400px" src="img/museo-valor/museo-valor-1920.jpg" , alt="Lista de chocolates Valor" />
+              <img class="reduced" srcset="img/museo-valor/museo-valor-640.jpg?as=webp 640w, 
+                          img/museo-valor/museo-valor-1920.jpg?as=webp 1920w" sizes="(max-width: 800px) 640px, 1920px"
+                src="img/museo-valor/museo-valor-1920.jpg" alt="Lista de chocolates Valor" />
 
               <figcaption>
                 <cite>
