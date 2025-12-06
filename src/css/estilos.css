@@ -405,7 +405,7 @@ svg {
 
 /* Sección de las animaciones */
 
-.sectionAnimations {
+.divAnimations {
     display: flex;
     justify-content: center;
 }
