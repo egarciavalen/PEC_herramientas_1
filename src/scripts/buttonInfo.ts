@@ -5,11 +5,11 @@ const historyParagraph = document.getElementById('historyParagraph') as HTMLButt
 /* Funciones */
 function showInfo() {
     const historyClassName= historyParagraph.className;
-    if (historyClassName.includes('visible')) {
-        historyParagraph.className = 'hidden';
+    if (historyClassName.includes('displayBlock')) {
+        historyParagraph.className = 'displayNone';
         indexButton.className = 'buttonNotSelected';
     } else {
-        historyParagraph.className = 'visible';
+        historyParagraph.className = 'displayBlock';
         indexButton.className = 'buttonSelected';
     }
 }

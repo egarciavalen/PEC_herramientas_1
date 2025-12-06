@@ -87,6 +87,6 @@
 
     /* Otros elementos */
     --article-header-margin-size: 2rem;
-
-
+    --transition-history-text-speed: 0.5s;
+    --animation-title-speed: 1.5s;
 }

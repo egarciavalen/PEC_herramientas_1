@@ -324,11 +324,11 @@ footer {
     border: var(--border-img-size) solid var(--border-img-color);
     text-align: center;
     padding: var(--p-history-padding-size);
-    transition: color 0.5s ease-in;   
+    transition: color var(--transition-history-text-speed) ease-in;
 }
 
 #historyParagraph:hover {
-    color: var(--secondary-color);   
+    color: var(--secondary-color);
 }
 
 /* MOSTRAR Y OCULTAR VÍDEO E IMÁGENES */
@@ -364,12 +364,12 @@ footer {
 }
 
 /* OCULTAR Y MOSTRAR ELEMENTOS */
-.hidden {
-    visibility: hidden;
+.displayNone {
+    display: none;
 }
 
-.visible {
-    visibility: visible;
+.displayBlock {
+    display: block;
 }
 
 /* MIGA DE PAN */
@@ -390,6 +390,85 @@ footer {
     /* Se especifica el carácter unicode */
     content: '\1433';
     padding-left: var(--breadcrumb-content-padding-size);
+}
+
+/* Gestión de SVG */
+
+svg {
+    /* Para poder asignar el color correspondiente */
+    fill: currentColor;
+}
+
+/* Sección de las animaciones */
+
+.sectionAnimations {
+    display: flex;
+    justify-content: center;
+}
+
+/* Animación del título */
+
+#cocoaHub {
+    color: var(--main-color);
+    font-size: var(--h1-size);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#cocoaHub .char {
+    transform: translateY(0);
+    transform-origin: center;
+    /* Propiedades de la animación */
+    animation-duration: var(--animation-title-speed);
+    animation-name: animatedTitle;
+    animation-timing-function: ease-in-out infinite;
+    animation-iteration-count: infinite;
+}
+
+#cocoaHub .char:nth-child(1) {
+    animation-delay: 100ms;
+}
+
+#cocoaHub .char:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+#cocoaHub .char:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+#cocoaHub .char:nth-child(4) {
+    animation-delay: 400ms;
+}
+
+#cocoaHub .char:nth-child(5) {
+    animation-delay: 500ms;
+}
+
+#cocoaHub .char:nth-child(6) {
+    animation-delay: 600ms;
+}
+
+#cocoaHub .char:nth-child(7) {
+    animation-delay: 700ms;
+}
+
+#cocoaHub .char:nth-child(8) {
+    animation-delay: 800ms;
+}
+
+@keyframes animatedTitle {
+
+    0%,
+    100% {
+        transform: translateY(15%);
+
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
 }
 
 /* OTROS ELEMENTOS */
