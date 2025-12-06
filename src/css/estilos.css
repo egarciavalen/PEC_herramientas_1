@@ -320,11 +320,15 @@ footer {
 
 #historyParagraph {
     background-color: var(--main-color);
-    color: var(--secondary-color);
+    color: var(--main-color);
     border: var(--border-img-size) solid var(--border-img-color);
     text-align: center;
     padding: var(--p-history-padding-size);
+    transition: color 0.5s ease-in;   
+}
 
+#historyParagraph:hover {
+    color: var(--secondary-color);   
 }
 
 /* MOSTRAR Y OCULTAR VÍDEO E IMÁGENES */
