@@ -85,8 +85,13 @@
     --breadcrumb-li-margin-size: 0.5rem;
     --breadcrumb-content-padding-size: 1rem;
 
-    /* Otros elementos */
-    --article-header-margin-size: 2rem;
+    /* Gestión de los svg */
+    --svg-title-width: 25rem;
+
+    /* Animaciones */
     --transition-history-text-speed: 0.5s;
     --animation-title-speed: 1.5s;
+
+    /* Otros elementos */
+    --article-header-margin-size: 2rem;
 }

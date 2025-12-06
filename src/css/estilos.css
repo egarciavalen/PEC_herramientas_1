@@ -397,6 +397,7 @@ footer {
 svg {
     /* Para poder asignar el color correspondiente */
     fill: currentColor;
+    width: var(--svg-title-width) ;
 }
 
 /* Sección de las animaciones */
@@ -515,6 +516,7 @@ svg {
         --cite-size: 1.8rem;
         --nested-list-title-size: 2.5rem;
         --inside-nested-list-size: 2rem;
+        --svg-title-width: 30rem;
     }
 }
 
@@ -530,5 +532,6 @@ svg {
         --cite-size: 2rem;
         --nested-list-title-size: 3rem;
         --inside-nested-list-size: 2.5rem;
+        --svg-title-width: 40rem;
     }
 }
