@@ -320,6 +320,7 @@ footer {
 
 #historyParagraph {
     background-color: var(--main-color);
+    /* Color igual que el fondo a propósito para gener una transición */
     color: var(--main-color);
     border: var(--border-img-size) solid var(--border-img-color);
     text-align: center;
@@ -329,6 +330,8 @@ footer {
 
 #historyParagraph:hover {
     color: var(--secondary-color);
+    /* Para que el validador CSS no de errores */
+    background-color: var(--main-color);
 }
 
 /* MOSTRAR Y OCULTAR VÍDEO E IMÁGENES */
@@ -411,6 +414,8 @@ svg {
 
 #cocoaHub {
     color: var(--main-color);
+    /* Para que el validador CSS no de errores */
+    background-color: inherit;
     font-size: var(--h1-size);
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -422,7 +427,7 @@ svg {
     /* Propiedades de la animación */
     animation-duration: var(--animation-title-speed);
     animation-name: animatedTitle;
-    animation-timing-function: ease-in-out infinite;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -498,7 +503,6 @@ svg {
 
 .polygon {
     /* Uso de clip path */
-    -webkit-clip-path: polygon(0 5%, 50% 52%, 5% 0, 95% 0, 50% 52%, 100% 5%, 100% 95%, 50% 52%, 95% 100%, 5% 100%, 50% 52%, 0 95%);
     clip-path: polygon(0 5%, 50% 52%, 5% 0, 95% 0, 50% 52%, 100% 5%, 100% 95%, 50% 52%, 95% 100%, 5% 100%, 50% 52%, 0 95%);
 }
 
