@@ -395,17 +395,13 @@ footer {
     padding-left: var(--breadcrumb-content-padding-size);
 }
 
-/* Gestión de SVG */
 
-svg {
-    /* Para poder asignar el color correspondiente */
-    fill: currentColor;
-    width: var(--svg-title-width) ;
-}
 
 /* Sección de las animaciones */
 
 .sectionAnimations {
+    margin-top: 3rem;
+    /* Display flex para poder colocar las animaciones una debajo de otra */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,9 +413,12 @@ svg {
     color: var(--main-color);
     /* Para que el validador CSS no de errores */
     background-color: inherit;
-    font-size: var(--h1-size);
+    font-size: var(--svg--title-font-size);
     margin-top: 3rem;
     margin-bottom: 1rem;
+    /* Para poder cambiar el color de las letras */
+    fill: currentColor;
+    width: var(--svg-title-width-size) ;
 }
 
 #cocoaHub .char {
@@ -481,7 +480,8 @@ svg {
 /* Animación y gestión del chocolate */
 
 #meltedChocolate {
-    margin-left: var(--melted-chocolate-left-margin-size);
+    margin-left: var(--svg-melted-chocolate-left-margin-size);
+    width: var(--svg-melted-chocolate-width-size);
 }
 
 #meltedChocolate rect, #meltedChocolate line, #meltedChocolate polygon {
@@ -560,8 +560,8 @@ svg {
         --cite-size: 1.8rem;
         --nested-list-title-size: 2.5rem;
         --inside-nested-list-size: 2rem;
-        --svg-title-width: 30rem;
-        --melted-chocolate-left-margin-size: 20rem;
+        --svg-title-width-size: 30rem;
+        --svg--title-font-size: 4rem;       
     }
 }
 
@@ -577,7 +577,7 @@ svg {
         --cite-size: 2rem;
         --nested-list-title-size: 3rem;
         --inside-nested-list-size: 2.5rem;
-        --svg-title-width: 40rem;
-        --melted-chocolate-left-margin-size: 28rem;
+        --svg-title-width-size: 40rem;
+        --svg--title-font-size: 5rem;
     }
 }
