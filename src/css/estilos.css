@@ -427,7 +427,7 @@ svg {
     /* Propiedades de la animación */
     animation-duration: var(--animation-title-speed);
     animation-name: animatedTitle;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
