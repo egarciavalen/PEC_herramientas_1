@@ -484,10 +484,34 @@ svg {
     margin-left: var(--melted-chocolate-left-margin-size);
 }
 
-#meltedChocolate rect, #meltedChocolate line {
+#meltedChocolate rect, #meltedChocolate line, #meltedChocolate polygon {
     stroke: var(--main-color);
 }
 
+#meltedChocolate polygon {
+   fill: var(--main-color);
+}
+
+#meltedChocolate polygon {
+    animation-duration: var(--animation-melted-chocolate-speed);
+    animation-name: dropChocolate;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dropChocolate {
+    
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        /* Opacity 0 para poder ocultar las 'gotas' */
+        opacity: 0;
+        transform: translateY(8%);
+    }
+
+}
 
 /* OTROS ELEMENTOS */
 
