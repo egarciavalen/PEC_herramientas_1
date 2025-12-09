@@ -501,14 +501,15 @@ footer {
 
 @keyframes dropChocolate {
     
-    0% {
-        transform: translateY(0%);
+    50% {
+        opacity: 1;
+        transform: translateY(3%);
     }
 
     100% {
         /* Opacity 0 para poder ocultar las 'gotas' */
         opacity: 0;
-        transform: translateY(8%);
+        transform: translateY(10%);
     }
 
 }
