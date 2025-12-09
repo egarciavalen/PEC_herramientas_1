@@ -405,12 +405,13 @@ svg {
 
 /* Sección de las animaciones */
 
-.divAnimations {
+.sectionAnimations {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Animación del título */
+/* Animación y gestión del título */
 
 #cocoaHub {
     color: var(--main-color);
@@ -477,6 +478,17 @@ svg {
 
 }
 
+/* Animación y gestión del chocolate */
+
+#meltedChocolate {
+    margin-left: var(--melted-chocolate-left-margin-size);
+}
+
+#meltedChocolate rect, #meltedChocolate line {
+    stroke: var(--main-color);
+}
+
+
 /* OTROS ELEMENTOS */
 
 .reduced {
@@ -506,6 +518,10 @@ svg {
     clip-path: polygon(0 5%, 50% 52%, 5% 0, 95% 0, 50% 52%, 100% 5%, 100% 95%, 50% 52%, 95% 100%, 5% 100%, 50% 52%, 0 95%);
 }
 
+.center {
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 
 /* Formato de tablet */
@@ -521,6 +537,7 @@ svg {
         --nested-list-title-size: 2.5rem;
         --inside-nested-list-size: 2rem;
         --svg-title-width: 30rem;
+        --melted-chocolate-left-margin-size: 20rem;
     }
 }
 
@@ -537,5 +554,6 @@ svg {
         --nested-list-title-size: 3rem;
         --inside-nested-list-size: 2.5rem;
         --svg-title-width: 40rem;
+        --melted-chocolate-left-margin-size: 28rem;
     }
 }

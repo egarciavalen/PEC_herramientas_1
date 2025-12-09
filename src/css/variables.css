@@ -87,10 +87,12 @@
 
     /* Gestión de los svg */
     --svg-title-width: 25rem;
+    --melted-chocolate-left-margin-size: 14rem;
 
     /* Animaciones */
     --transition-history-text-speed: 0.5s;
     --animation-title-speed: 1.5s;
+
 
     /* Otros elementos */
     --article-header-margin-size: 2rem;
