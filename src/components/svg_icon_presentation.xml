@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg version="1.1" height="40" width="120" xmlns="http://www.w3.org/2000/svg" id="icon_presentation">
+
+  <defs>
+    <clipPath id="shape-circles">
+      <circle cx="20" cy="20" r="20" />
+      <circle cx="60" cy="20" r="20" />
+      <circle cx="100" cy="20" r="20" />
+      <rect x="0" y="0" width="120" height="2"/>
+      <rect x="0" y="38" width="120" height="2"/>
+    </clipPath>
+  </defs>
+
+<!-- Rectángulo a incluir -->
+<rect x="0" y="0" width="120" height="40" clip-path="url(#shape-circles)" />
+
+</svg>

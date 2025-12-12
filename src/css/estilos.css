@@ -321,7 +321,7 @@ footer {
 #historyParagraph {
     background-color: var(--main-color);
     color: inherit;
-    
+
     border: var(--border-img-size) solid var(--border-img-color);
     text-align: center;
     padding: var(--p-history-padding-size);
@@ -330,7 +330,7 @@ footer {
 
 #historyParagraph p {
     /* Color igual que el fondo a propósito para gener una transición */
-    color: var(--main-color);   
+    color: var(--main-color);
     background-color: inherit;
     transition: color var(--transition-history-text-speed) ease-in;
 }
@@ -404,14 +404,19 @@ footer {
 
 
 
-/* Sección de las animaciones */
+/* Sección y div de las animaciones */
 
-.sectionAnimations {
-    margin-top: 3rem;
-    /* Display flex para poder colocar las animaciones una debajo de otra */
+.sectionAnimations,
+.divAnimations {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
+}
+
+.divAnimations {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* Animación y gestión del título */
@@ -425,7 +430,7 @@ footer {
     margin-bottom: 1rem;
     /* Para poder cambiar el color de las letras */
     fill: currentColor;
-    width: var(--svg-title-width-size) ;
+    width: var(--svg-title-width-size);
 }
 
 #cocoaHub .char {
@@ -469,12 +474,14 @@ footer {
     width: var(--svg-melted-chocolate-width-size);
 }
 
-#meltedChocolate rect, #meltedChocolate line, #meltedChocolate polygon {
+#meltedChocolate rect,
+#meltedChocolate line,
+#meltedChocolate polygon {
     stroke: var(--main-color);
 }
 
 #meltedChocolate polygon {
-   fill: var(--main-color);
+    fill: var(--main-color);
 }
 
 #meltedChocolate polygon {
@@ -485,7 +492,7 @@ footer {
 }
 
 @keyframes dropChocolate {
-    
+
     0%,
     50% {
         opacity: 1;
@@ -498,6 +505,12 @@ footer {
         transform: translateY(10%);
     }
 
+}
+
+/* Icono adicional de la portada hecho con svg y clip-path */
+
+#icon_presentation {
+    fill: var(--main-color);
 }
 
 /* OTROS ELEMENTOS */
@@ -548,7 +561,7 @@ footer {
         --nested-list-title-size: 2.5rem;
         --inside-nested-list-size: 2rem;
         --svg-title-width-size: 30rem;
-        --svg--title-font-size: 4rem;       
+        --svg--title-font-size: 4rem;
     }
 }
 
