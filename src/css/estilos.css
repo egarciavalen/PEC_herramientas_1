@@ -438,37 +438,14 @@ footer {
     animation-iteration-count: infinite;
 }
 
-#cocoaHub .char:nth-child(1) {
+#cocoaHub .char:nth-child(odd) {
     animation-delay: 100ms;
 }
 
-#cocoaHub .char:nth-child(2) {
-    animation-delay: 200ms;
-}
-
-#cocoaHub .char:nth-child(3) {
-    animation-delay: 300ms;
-}
-
-#cocoaHub .char:nth-child(4) {
-    animation-delay: 400ms;
-}
-
-#cocoaHub .char:nth-child(5) {
+#cocoaHub .char:nth-child(even) {
     animation-delay: 500ms;
 }
 
-#cocoaHub .char:nth-child(6) {
-    animation-delay: 600ms;
-}
-
-#cocoaHub .char:nth-child(7) {
-    animation-delay: 700ms;
-}
-
-#cocoaHub .char:nth-child(8) {
-    animation-delay: 800ms;
-}
 
 @keyframes animatedTitle {
 
@@ -480,6 +457,7 @@ footer {
 
     50% {
         transform: translateY(0%);
+        transform: scale(1, 1.2);
     }
 
 }
