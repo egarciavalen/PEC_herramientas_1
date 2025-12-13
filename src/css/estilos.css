@@ -323,7 +323,6 @@ footer {
     border: var(--border-img-size) solid var(--border-img-color);
     text-align: center;
     padding: var(--p-history-padding-size);
-    transition: color var(--transition-history-text-speed) ease-in;
 }
 
 #historyParagraph p {
@@ -431,7 +430,7 @@ footer {
     width: var(--svg-title-width-size);
 }
 
-#cocoaHub .char {
+#cocoaHub text {
     transform: translateY(0);
     transform-origin: center;
     /* Propiedades de la animación */
@@ -441,11 +440,11 @@ footer {
     animation-iteration-count: infinite;
 }
 
-#cocoaHub .char:nth-child(odd) {
+#cocoaHub text:nth-child(odd) {
     animation-delay: 100ms;
 }
 
-#cocoaHub .char:nth-child(even) {
+#cocoaHub text:nth-child(even) {
     animation-delay: 500ms;
 }
 
