@@ -65,13 +65,11 @@ a:hover {
 /* CONTENEDORES PRINCIPALES */
 
 .imgContent {
-    /* Imagen de fondo */
-    background-image: url('/src/img/fondo.jpg?as=webp');
-    /* Para poder redimensionar sin que la imagen pierda calidad */
-    background-size: cover;
     /* Se aplica un display flex para poder centrar el contenido */
     display: flex;
     justify-content: center;
+    background-color: var(--background-color);
+    
 }
 
 .alignContent {
@@ -511,6 +509,20 @@ footer {
 
 #icon_presentation {
     fill: var(--main-color);
+}
+
+/* Imagen de fondo */
+
+.backgroundImg {
+
+    border: none;
+    border-radius: initial;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* OTROS ELEMENTOS */
