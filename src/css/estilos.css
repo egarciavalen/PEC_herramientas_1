@@ -1,6 +1,118 @@
-/* Importaciones de hojas de estilo */
-@import 'reset';
-@import 'variables';
+:root {
+    /* Se indican las variables que se van a emplear */
+
+    /* COLORES */
+    --text-color: #000000;
+    --main-color: #2E1405;
+    --secondary-color: #F4E0BD;
+    --tertiary-color: #613000;
+    --background-color: #CAA168;
+
+    --border-img-color: #000000;
+
+    /* TAMAÑOS */
+
+    /* Indicar px */
+    --initial-px: 10px;
+
+    /* Ancho del contenido */
+    --content-width: 90%;
+
+    /* Elementos centrales */
+    --h1-margin-top-size: 1rem;
+    --h1-size: 5rem;
+    --h2-size: 2.5rem;
+    --h2-margin-size: 0.5rem;
+    --h3-size: 2rem;
+    --p-size: 1.7rem;
+    --p-margin-size: 0.5rem;
+
+    /* Padding del main */
+    --main-padding-horizontal-size: 2rem;
+    --main-padding-vertical-size: 2rem;
+
+    /* Gestión de la navegación */
+    --nav-li-size: 2rem;
+    --nav-li-margin-padding-size: 2rem;
+    --nav-a-border-size: 0.2rem;
+    --nav-li-a-padding-size: 0.5rem;
+
+    /* Gestión de la lista de viajes */
+    --dt-size: 1.8rem;
+    --dt-margin-top-size: 2rem;
+    --dt-margin-bottom-size: 0.5rem;
+    --dd-figure-p-size: 1rem;
+    --dd-figure-p-margin-size: 1rem;
+
+
+    /* Gestión de la lista de enlaces */
+    --nested-list-title-size: 2rem;
+    --nested-list-margin-bottom-size: 3rem;
+    --inside-nested-list-size: 1.8rem;
+    --inside-nested-list-margin-left-size: 1.5rem;
+    --inside-nested-list-margin-top-size: 1rem;
+
+    /* Gestión de las figuras (imágens y vídeos) */
+    --figure-margin-top-size: 4rem;
+    --img-size: 40rem;
+    --img-cite-margin-size: 1rem;
+    --img-reduced-height-rem-size: 40rem;
+    --video-introduction-margin-size: 2rem;
+    --cite-size: 1.5rem;
+
+    /* Gestión de los bordes */
+    --border-radius-size: 1rem;
+    --border-img-size: 0.5rem;
+    --border-content-size: 0.4rem;
+
+    /* Gestión del footer */
+    --footer-padding-vertical-size: 2rem;
+    --footer-padding-horizontal-size: 1rem;
+
+    /* Gestión del botón y párrafo de historia */
+    --p-history-padding-size: 1rem;
+    --button-history-padding-size: 1rem;
+
+    /* Gestión del botón en la pestaña de inicio */
+    --info-button-detail-margin-top-size: 3rem;
+    --info-button-detail-margin-bottom-size: 2rem;
+
+    /* Gestión de los botones en las pestañas de detalle */
+    --show-button-detail-margin-top-size: 2rem;
+    --show-button-detail-margin-bottom-size: 1rem;
+
+    /* Miga de pan */
+    --breadcrumb-font-size: 1.5rem;
+    --breadcrumb-margin-size: 2rem;
+    --breadcrumb-li-margin-size: 0.5rem;
+    --breadcrumb-content-padding-size: 1rem;
+
+    /* SVG del título + animaciones */
+    --svg-title-width-size: 20rem;
+    --svg--title-font-size: 3rem;
+    --animation-title-speed: 1.5s;   
+
+    /* SVG del chocolate + animaciones */
+    --svg-melted-chocolate-width-size: 25rem;
+    --svg-melted-chocolate-left-margin-size: 15rem;
+    --animation-melted-chocolate-speed: 2.5s;
+
+    /* Otras animaciones */
+    --transition-history-text-speed: 0.5s;
+ 
+    /* Otros elementos */
+    --article-header-margin-size: 2rem;
+}
+
+
+*,
+*:after,
+*:before {
+    /* Para garantizar que el diseño de los elementos sean consistentes */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Se toma como base el diseño móvil */
 
@@ -69,6 +181,8 @@ a:hover {
     display: flex;
     justify-content: center;
     background-color: var(--background-color);
+    /* Cambios por el validador CSS */
+    color:inherit;
     
 }
 
@@ -325,14 +439,15 @@ footer {
     padding: var(--p-history-padding-size);
 }
 
-#historyParagraph p {
+#historyParagraph button {
     /* Color igual que el fondo a propósito para gener una transición */
     color: var(--main-color);
+    border: none;
     background-color: inherit;
     transition: color var(--transition-history-text-speed) ease-in;
 }
 
-#historyParagraph p:hover {
+#historyParagraph button:focus {
     color: var(--secondary-color);
     /* Para que el validador CSS no de errores */
     background-color: inherit;
@@ -412,7 +527,6 @@ footer {
 }
 
 .divAnimations {
-    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -458,8 +572,7 @@ footer {
     }
 
     50% {
-        transform: translateY(0%);
-        transform: scale(1, 1.2);
+        transform: translateY(0%) scale(1, 1.2);
     }
 
 }
