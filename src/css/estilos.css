@@ -445,6 +445,7 @@ footer {
     border: none;
     background-color: inherit;
     transition: color var(--transition-history-text-speed) ease-in;
+    font-size: var(--p-size);
 }
 
 #historyParagraph button:focus {
