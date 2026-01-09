@@ -91,7 +91,7 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/det1/chocolates-lindt-1/chocolates-lindt-1-640.jpg?as=webp 640w, 
+                <img loading="lazy" srcset="img/det1/chocolates-lindt-1/chocolates-lindt-1-640.jpg?as=webp 640w, 
                           img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg?as=webp 1920w"
                   sizes="(max-width: 800px) 640px, 1920px" src="img/det1/chocolates-lindt-1/chocolates-lindt-1-1920.jpg"
                   alt="Chocolates Lindt en una bolsa" />
@@ -110,7 +110,7 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img srcset="img/det1/chocolates-lindt-2/chocolates-lindt-2-640.jpg?as=webp 640w, 
+                <img loading="lazy" srcset="img/det1/chocolates-lindt-2/chocolates-lindt-2-640.jpg?as=webp 640w, 
                           img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg?as=webp 1920w"
                   sizes="(max-width: 800px) 640px, 1920px" src="img/det1/chocolates-lindt-2/chocolates-lindt-2-1920.jpg"
                   alt="Chocolates Lindt donde se aprecia la marca en un bombón rojo" />
@@ -129,7 +129,7 @@
               <figure>
 
                 <!-- Resolution switching (sizes) -->
-                <img class="reduced" srcset="img/det1/entrada-museo-lindt/entrada-museo-lindt-640.jpg?as=webp 640w, 
+                <img loading="lazy" class="reduced" srcset="img/det1/entrada-museo-lindt/entrada-museo-lindt-640.jpg?as=webp 640w, 
                           img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg?as=webp 1920w"
                   sizes="(max-width: 800px) 640px, 1920px"
                   src="img/det1/entrada-museo-lindt/entrada-museo-lindt-1920.jpg"
@@ -156,7 +156,7 @@
                 de Roger Federer:</p>
 
               <figure>
-                <iframe src="https://www.youtube.com/embed/t9plnoKLGwY?si=wiUcIF1aVpDmtE9L"
+                <iframe loading="lazy" src="https://www.youtube.com/embed/t9plnoKLGwY?si=wiUcIF1aVpDmtE9L"
                   title="Gran apertura del museo Lindt"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -180,8 +180,8 @@
   <include src="./src/components/footer.html"></include>
 
   <!-- SCRIPT -->
-  <script src="./scripts/showImages.ts"></script>
-  <script src="./scripts/showVideo.ts"></script>
+  <script defer src="./scripts/showImages.ts"></script>
+  <script defer src="./scripts/showVideo.ts"></script>
 
 </body>
 
