@@ -12,8 +12,8 @@ html {
     color: var(--secondary-color);
     /* Para cortar el contenido cuando empiece a desbordarse */
     overflow-x: hidden;
-    /* Fuente de letra a emplear en la web; si NO se carga se usa serif */
-    font-family: 'Delius Swash Caps', serif;
+    /* Fuente de letra */
+    font-family: 'Times New Roman', serif;
 }
 
 h1 {
@@ -395,6 +395,7 @@ footer {
 .breadCrumbList li {
     display: inline-block;
     margin-right: var(--breadcrumb-li-margin-size);
+    font-size: var(--p-size);
 }
 
 .breadCrumbNext::after {
